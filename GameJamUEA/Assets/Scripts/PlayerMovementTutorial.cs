@@ -32,11 +32,12 @@ public class PlayerMovementTutorial : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
-    //public Animator anim;
+    public Animator anim;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
         rb.freezeRotation = true;
         readyToJump = true;
     }
@@ -48,7 +49,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 
         MyInput();
         SpeedControl();
-        //UpdateAnimation();
+        UpdateAnimation();
 
         // handle drag
         if (grounded)
@@ -121,10 +122,10 @@ public class PlayerMovementTutorial : MonoBehaviour
     }
 
     //Função para Animar o personagem
-    /*private void UpdateAnimation()
+    private void UpdateAnimation()
     {
         // Use the "transition" parameter in the Animator to control the animation state
         int transitionValue = (verticalInput != 0 || horizontalInput != 0) ? 1 : 0;
         anim.SetInteger("transition", transitionValue);
-    }*/
+    }
 }

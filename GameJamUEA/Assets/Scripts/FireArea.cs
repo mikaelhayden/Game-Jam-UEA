@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FireArea : MonoBehaviour
 {
-    public float Velocidade = 2.0f;
+    public float Velocidade;
     public GameObject FireArea1;
     public GameObject FireArea2;
     public GameObject FireArea3;
@@ -14,7 +14,7 @@ public class FireArea : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Velocidade = 10.0f;
     }
 
     // Update is called once per frame
