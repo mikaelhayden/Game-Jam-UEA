@@ -13,11 +13,14 @@ public class PlayerDie : MonoBehaviour
     public bool isDead;
     private Animator anim;
     private List<RawImage> coracoes;
+    private float tempoDano = 2f;
+    private PlayerMovementTutorial playerMove;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        playerMove = GetComponent<PlayerMovementTutorial>();
         RawImage[] rawImages = GetComponentsInChildren<RawImage>();
         coracoes = rawImages.ToList();
     }
@@ -36,22 +39,36 @@ public class PlayerDie : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay(Collider hit)
+    {
+        if (!isDead)
+        {
+            tempoDano -= Time.deltaTime;
+            if (tempoDano <= 0)
+            {
+                dano();
+                tempoDano = 2;
+            }
+        }
+    }
+
     public void dano() //Fun��o para fazer o Player Morrer
     {
         health -= 1;
-        area.Velocidade = 0.0f;
+        //area.Velocidade = 0.0f;
 
         if (coracoes.Count != 0)
         {
             coracoes.Last<RawImage>().enabled = false;
             coracoes.Remove(coracoes.Last<RawImage>());
         }
-
-        if (health <= 0)
+        
+        if (health <= 0 && !isDead)
         {
             //player morre
             isDead = true;
             anim.SetTrigger("die");
+            playerMove.moveSpeed = 0;
             //over.gameOver();
         }
     }
