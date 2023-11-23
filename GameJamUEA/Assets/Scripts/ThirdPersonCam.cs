@@ -76,4 +76,9 @@ public class ThirdPersonCam : MonoBehaviour
 
         currentStyle = newStyle;
     }
+
+    public void sair()
+    {
+        Application.Quit();
+    }
 }

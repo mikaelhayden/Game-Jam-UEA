@@ -66,7 +66,9 @@ public class PlayerDie : MonoBehaviour
         
         if (health <= 0 && !isDead)
         {
+            Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            
             //player morre
             isDead = true;
             anim.SetTrigger("die");
