@@ -15,6 +15,7 @@ public class PlayerDie : MonoBehaviour
     private List<RawImage> coracoes;
     private float tempoDano = 2f;
     private PlayerMovementTutorial playerMove;
+    public GameObject inforObj;
 
     // Start is called before the first frame update
     void Start()
@@ -65,10 +66,12 @@ public class PlayerDie : MonoBehaviour
         
         if (health <= 0 && !isDead)
         {
+            Cursor.visible = true;
             //player morre
             isDead = true;
             anim.SetTrigger("die");
             playerMove.moveSpeed = 0;
+            inforObj.SetActive(true);
             //over.gameOver();
         }
     }

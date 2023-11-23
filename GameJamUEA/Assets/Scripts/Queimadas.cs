@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+
 
 public class Queimadas : MonoBehaviour
 {
@@ -25,7 +28,7 @@ public class Queimadas : MonoBehaviour
         }
         else
         {
-            // Chamar outra cena ou algo tipo
+            SceneManager.LoadScene(2);
         }
     }
 }
