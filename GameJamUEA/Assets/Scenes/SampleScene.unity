@@ -1888,6 +1888,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   orientation: {fileID: 1747508745}
+  anim: {fileID: 0}
 --- !u!95 &696956523
 Animator:
   serializedVersion: 5
@@ -3051,43 +3052,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 967795486}
   m_Mesh: {fileID: 4060378875778621561, guid: 7814ac81239415f4f99ba9183f52dca5, type: 3}
---- !u!1 &970249203 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 56139989262713721, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
-  m_PrefabInstance: {fileID: 1435515661}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &970249204 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6895683119347190471, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
   m_PrefabInstance: {fileID: 1435515661}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970249203}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5dba8ef429676704bb634b6c5aea758c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &970249205
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970249203}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &982157551
 GameObject:
   m_ObjectHideFlags: 0
@@ -4203,10 +4178,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireArea
       objectReference: {fileID: 0}
-    - target: {fileID: 56139989262713721, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 952688286262262679, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 304
@@ -4247,49 +4218,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1607752768750924462, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298675767353678031, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3061538084401148744, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3553043660264105758, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
-      propertyPath: m_TagString
-      value: fire
-      objectReference: {fileID: 0}
-    - target: {fileID: 5916289807211428933, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
-      propertyPath: m_TagString
-      value: fire
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066285536345228639, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
-      propertyPath: m_TagString
-      value: fire
-      objectReference: {fileID: 0}
-    - target: {fileID: 6067394360175735930, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
-      propertyPath: m_TagString
-      value: fire
-      objectReference: {fileID: 0}
-    - target: {fileID: 6895683119347190471, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
-      propertyPath: Velocidade
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8254378650875992539, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 56139989262713721, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 970249205}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68328d7726a0dc74bb32ab94f4ad277e, type: 3}
 --- !u!1 &1455866215
 GameObject:
